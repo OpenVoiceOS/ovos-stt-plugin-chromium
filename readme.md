@@ -36,7 +36,6 @@ By default the global language used by mycroft-core will be used
   "stt": {
     "module": "chromium_stt_plug",
     "chromium_stt_plug": {
-        "model_folder": "path/to/model/folder",
         "lang": "en-US",
         "pfilter": 0
     }
