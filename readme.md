@@ -43,6 +43,6 @@ By default the global language used by mycroft-core will be used
  
 ```
 
-`pfilter` -  The profanity filter level can be adjusted with ``pfilter``: 0 - No filter, 1 - Only shows the first character and replaces the rest with asterisks. The default is level 0.
+`pfilter` -  The profanity filter level, 0 - No filter, 1 - Only shows the first character and replaces the rest with asterisks. The default is level 0.
 
 `lang` - override core language and use this one instead
