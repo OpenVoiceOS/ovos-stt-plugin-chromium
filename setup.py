@@ -4,7 +4,7 @@ from setuptools import setup
 PLUGIN_ENTRY_POINT = 'chromium_stt_plug = jarbas_stt_plugin_chromium:ChromiumSTT'
 setup(
     name='jarbas-stt-plugin-chromium',
-    version='0.1.0',
+    version='0.1.1',
     description='A stt plugin for mycroft using the google chrome browser api',
     url='https://github.com/JarbasLingua/jarbas-stt-plugin-chromium',
     author='JarbasAi',
