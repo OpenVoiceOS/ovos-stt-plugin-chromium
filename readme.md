@@ -44,7 +44,7 @@ By default the global language used by mycroft-core will be used
  
 ```
 
-`pfilter` - if True only shows the first character and replaces the rest with asterisks.
+`pfilter` - profanity filter, if True censors "bad words", only shows the first character and replaces the rest with asterisks. eg `f*** you`
 
 `lang` - override core language and use this one instead
 
