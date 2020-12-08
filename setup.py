@@ -4,14 +4,14 @@ from setuptools import setup
 PLUGIN_ENTRY_POINT = 'chromium_stt_plug = jarbas_stt_plugin_chromium:ChromiumSTT'
 setup(
     name='jarbas-stt-plugin-chromium',
-    version='0.1.2',
+    version='0.1.3',
     description='A stt plugin for mycroft using the google chrome browser api',
     url='https://github.com/JarbasLingua/jarbas-stt-plugin-chromium',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['jarbas_stt_plugin_chromium'],
-    install_requires=["SpeechRecognition==3.8.1"],
+    install_requires=["requests"],
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',

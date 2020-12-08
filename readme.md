@@ -37,12 +37,15 @@ By default the global language used by mycroft-core will be used
     "module": "chromium_stt_plug",
     "chromium_stt_plug": {
         "lang": "en-US",
-        "pfilter": 0
+        "pfilter": false,
+        "debug": false
     }
   }
  
 ```
 
-`pfilter` -  The profanity filter level, 0 - No filter, 1 - Only shows the first character and replaces the rest with asterisks. The default is level 0.
+`pfilter` - if True only shows the first character and replaces the rest with asterisks.
 
 `lang` - override core language and use this one instead
+
+`debug` - log confidence and alternative transcriptions
