@@ -1,5 +1,5 @@
-from mycroft.stt import STT
-from mycroft.util.log import LOG
+from ovos_utils.log import LOG
+from ovos_utils.plugins.stt import STT
 import json
 import requests
 import logging
