@@ -11,7 +11,7 @@ setup(
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['jarbas_stt_plugin_chromium'],
-    install_requires=["requests", "ovos_utils>=0.0.6"],
+    install_requires=["requests", "ovos_utils>=0.0.8a3"],
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
