@@ -11,8 +11,9 @@ setup(
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['ovos_stt_plugin_chromium'],
-    install_requires=["requests", "ovos_utils>=0.0.8a3",
-                      "ovos-plugin-manager>=0.0.1a3"],
+    install_requires=["requests",
+                      "ovos_utils>=0.0.12a1",
+                      "ovos-plugin-manager>=0.0.1a7"],
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
