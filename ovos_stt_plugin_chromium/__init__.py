@@ -1,5 +1,5 @@
 from ovos_utils.log import LOG
-from ovos_utils.plugins.stt import STT
+from ovos_plugin_manager.templates.stt import STT
 import json
 import requests
 import logging

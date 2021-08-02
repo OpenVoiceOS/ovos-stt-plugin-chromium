@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 from setuptools import setup
 
-PLUGIN_ENTRY_POINT = 'chromium_stt_plug = jarbas_stt_plugin_chromium:ChromiumSTT'
+PLUGIN_ENTRY_POINT = 'ovos-stt-plugin-chromium = ovos_stt_plugin_chromium:ChromiumSTT'
 setup(
-    name='jarbas-stt-plugin-chromium',
-    version='0.2.0',
+    name='ovos-stt-plugin-chromium',
+    version='0.1.0',
     description='A stt plugin for mycroft using the google chrome browser api',
-    url='https://github.com/JarbasLingua/jarbas-stt-plugin-chromium',
+    url='https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
-    packages=['jarbas_stt_plugin_chromium'],
-    install_requires=["requests", "ovos_utils>=0.0.8a3"],
+    packages=['ovos_stt_plugin_chromium'],
+    install_requires=["requests", "ovos_utils>=0.0.8a3",
+                      "ovos-plugin-manager>=0.0.1a3"],
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -30,6 +31,6 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-    keywords='mycroft plugin stt',
+    keywords='mycroft ovos plugin stt',
     entry_points={'mycroft.plugin.stt': PLUGIN_ENTRY_POINT}
 )

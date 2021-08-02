@@ -2,12 +2,9 @@
 
 A stt plugin for mycroft using the google chrome browser api
 
-The "plugins" are pip install-able modules that provide new STT engines for mycroft, more info in the [docs](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/plugins)
-
 List of supported languages can be found [in this stackoverflow comment](https://stackoverflow.com/questions/14257598/what-are-language-codes-in-chromes-implementation-of-the-html5-speech-recogniti/14302134#14302134)
 
 This STT API [has been deprecated](http://www.chromium.org/developers/how-tos/api-keys) for developers and no new keys are issued, however it still works, most likely due to it being used in browsers, [a key is bundled](https://github.com/JarbasLingua/jarbas-stt-plugin-chromium/blob/61ab7c6917bf4fb0ebbdd1066109ac33a4da7704/jarbas_stt_plugin_chromium/__init__.py#L14) with this plugin that has been functional for a long time
-
 
 This is the same as the "google" module in mycroft-core, while this engine is supported by mycroft-core, it is impossible to use because you can't get keys, this usage (of demo key) is disapproved and a [PR to fix this](https://github.com/MycroftAI/mycroft-core/pull/1493) has been blocked
 
@@ -15,7 +12,7 @@ By using this plugin you will lose some privacy (mycroft backend proxy) but will
 
 ## Install
 
-`mycroft-pip install jarbas-stt-plugin-chromium`
+`pip install ovos-stt-plugin-chromium`
 
 
 ## Configuration
@@ -24,7 +21,7 @@ By default the global language used by mycroft-core will be used
 
 ```json
   "stt": {
-    "module": "chromium_stt_plug"
+    "module": "ovos-stt-plugin-chromium"
   }
  
 ```
@@ -34,8 +31,8 @@ By default the global language used by mycroft-core will be used
 
 ```json
   "stt": {
-    "module": "chromium_stt_plug",
-    "chromium_stt_plug": {
+    "module": "ovos-stt-plugin-chromium",
+    "ovos-stt-plugin-chromium": {
         "lang": "en-US",
         "pfilter": false,
         "debug": false
