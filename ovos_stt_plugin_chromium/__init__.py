@@ -6,8 +6,8 @@ import logging
 
 
 class ChromiumSTT(STT):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
         self.pfilter = self.config.get("pfilter", False)
         self.lang = self.config.get("lang") or self.lang
 

@@ -4,7 +4,7 @@ from setuptools import setup
 PLUGIN_ENTRY_POINT = 'ovos-stt-plugin-chromium = ovos_stt_plugin_chromium:ChromiumSTT'
 setup(
     name='ovos-stt-plugin-chromium',
-    version='0.1.0',
+    version='0.1.1',
     description='A stt plugin for mycroft using the google chrome browser api',
     url='https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium',
     author='JarbasAi',
