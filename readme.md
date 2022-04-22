@@ -46,3 +46,12 @@ By default the global language used by mycroft-core will be used
 `lang` - override core language and use this one instead
 
 `debug` - log confidence and alternative transcriptions
+
+
+## Docker
+
+The privacy benefit is dubious at best, but this plugin can be used together with [ovos-stt-http-server](https://github.com/OpenVoiceOS/ovos-stt-http-server) to provides the equivalent to selene STT proxy functionality without pairing
+
+```bash
+docker run -p 8080:8080 ghcr.io/openvoiceos/google-stt-proxy:master
+```
