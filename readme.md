@@ -50,8 +50,14 @@ By default the global language used by mycroft-core will be used
 
 ## Docker
 
-The privacy benefit is dubious at best, but this plugin can be used together with [ovos-stt-http-server](https://github.com/OpenVoiceOS/ovos-stt-http-server) to provides the equivalent to selene STT proxy functionality without pairing
+The privacy benefit is dubious at best, but this plugin can be used together with [ovos-stt-http-server](https://github.com/OpenVoiceOS/ovos-stt-http-server) to provide the equivalent of selene STT proxy functionality without pairing
 
 ```bash
 docker run -p 8080:8080 ghcr.io/openvoiceos/google-stt-proxy:master
 ```
+
+Public instances of [ovos-stt-http-server](https://github.com/OpenVoiceOS/ovos-stt-http-server) running this plugin:
+
+- https://stt.openvoiceos.com hosted by [@OpenVoiceOS](https://github.com/OpenVoiceOS)
+- https://stt.jarbasai.online hosted by [@JarbasAI](https://github.com/JarbasAl)
+- https://stt.strongthany.cc hosted by [@Strongthany](https://twitter.com/strongthany_)
