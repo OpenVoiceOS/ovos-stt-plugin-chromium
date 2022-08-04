@@ -2,6 +2,8 @@
 from setuptools import setup
 
 PLUGIN_ENTRY_POINT = 'ovos-stt-plugin-chromium = ovos_stt_plugin_chromium:ChromiumSTT'
+CONFIG_ENTRY_POINT = 'ovos-stt-plugin-chromium.config = ovos_stt_plugin_chromium:ChromiumSTTConfig'
+
 setup(
     name='ovos-stt-plugin-chromium',
     version='0.1.1',
@@ -33,5 +35,6 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='mycroft ovos plugin stt',
-    entry_points={'mycroft.plugin.stt': PLUGIN_ENTRY_POINT}
+    entry_points={'mycroft.plugin.stt': PLUGIN_ENTRY_POINT,
+                  'mycroft.plugin.stt.config': CONFIG_ENTRY_POINT}
 )
