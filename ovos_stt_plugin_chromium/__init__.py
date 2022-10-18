@@ -193,6 +193,7 @@ for lang, data in _lang.items():
         ChromiumSTTConfig[code] = [
             {"lang": code,
              "pfilter": False,
+             "priority": 40,
              "display_name": f"{lang} ({region})",
              "offline": False}
         ]
