@@ -58,6 +58,4 @@ docker run -p 8080:8080 ghcr.io/openvoiceos/google-stt-proxy:master
 
 Public instances of [ovos-stt-http-server](https://github.com/OpenVoiceOS/ovos-stt-http-server) running this plugin:
 
-- https://stt.openvoiceos.com hosted by [@OpenVoiceOS](https://github.com/OpenVoiceOS)
-- https://stt.jarbasai.online hosted by [@JarbasAI](https://github.com/JarbasAl)
-- https://stt.strongthany.cc hosted by [@Strongthany](https://twitter.com/strongthany_)
+- [https://stt.smartgic.io/chromium](https://stt.smartgic.io/chromium/status) hosted by [@goldyfruit](https://github.com/goldyfruit)
