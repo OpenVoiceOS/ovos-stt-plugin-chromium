@@ -1,5 +1,6 @@
 import json
 import logging
+from typing import List, Tuple, Optional
 
 import requests
 from ovos_plugin_manager.templates.stt import STT
@@ -220,7 +221,9 @@ class ChromiumSTT(STT):
             log = logging.getLogger("urllib3.connectionpool")
             log.setLevel("INFO")
 
-    def execute(self, audio, language=None):
+    def transcribe(self, audio, lang: Optional[str] = None) -> List[Tuple[str, float]]:
+        """transcribe audio data to a list of
+        possible transcriptions and respective confidences"""
         flac_data = audio.get_flac_data(
             convert_rate=None if audio.sample_rate >= 8000 else 8000,
             # audio samples must be at least 8 kHz
@@ -229,7 +232,7 @@ class ChromiumSTT(STT):
 
         params = {
             "client": "chromium",
-            "lang": language or self.lang,
+            "lang": lang or self.lang,
             "key": self.key,
             "pFilter": int(self.pfilter)
         }
@@ -245,6 +248,8 @@ class ChromiumSTT(STT):
         """
 
         result = r.text.split("\n")[1]
+        if not result:
+            return []
         data = json.loads(result)["result"]
         if len(data) == 0:
             return ""
@@ -252,20 +257,14 @@ class ChromiumSTT(STT):
         if self.debug:
             LOG.debug("transcriptions:" + str(data))
         if len(data) == 0:
+            return []
+
+        candidates = [(u["transcript"], u.get("confidence", 0.0))
+                      for u in data]
+        return sorted(candidates, key=lambda alt: alt[1], reverse=True)
+
+    def execute(self, audio, language=None) -> str:
+        transcripts = self.transcribe(audio, language)
+        if not transcripts:
             return ""
-
-        # we arbitrarily choose the first hypothesis by default.
-        # results seem to be ordered by confidence
-        best_hypothesis = data[0]["transcript"]
-
-        # if confidence is provided return highest conf
-        candidates = [alt for alt in data if alt.get("confidence")]
-        if self.debug:
-            LOG.debug("confidences: " + str(candidates))
-
-        if len(candidates):
-            best = max(candidates, key=lambda alt: alt["confidence"])
-            best_hypothesis = best["transcript"]
-            if self.debug:
-                LOG.debug("best confidence: " + best_hypothesis)
-        return best_hypothesis
+        return transcripts[0][0]
