@@ -12,7 +12,6 @@ BASEDIR = os.path.abspath(os.path.dirname(__file__))
 def get_version():
     """ Find the version of the package"""
     version_file = f'{BASEDIR}/ovos_stt_plugin_chromium/version.py'
-    print(f"ERROR: version file: {version_file}")
     major, minor, build, alpha = (None, None, None, None)
     with open(version_file) as f:
         for line in f:
@@ -37,15 +36,15 @@ def get_version():
 setup(
     name='ovos-stt-plugin-chromium',
     version=get_version(),
-    description='A stt plugin for mycroft using the google chrome browser api',
+    description='A stt plugin for OVOS using the google chrome browser api',
     url='https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['ovos_stt_plugin_chromium'],
     install_requires=["requests",
-                      "ovos_utils>=0.0.12a1",
-                      "ovos-plugin-manager>=0.0.1a7"],
+                      "ovos_utils>=0.0.12",
+                      "ovos-plugin-manager>=0.0.1"],
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
