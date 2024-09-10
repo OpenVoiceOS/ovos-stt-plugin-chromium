@@ -36,7 +36,7 @@ def get_version():
 
 setup(
     name='ovos-stt-plugin-chromium',
-    version='0.1.1',
+    version=get_version(),
     description='A stt plugin for mycroft using the google chrome browser api',
     url='https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium',
     author='JarbasAi',
