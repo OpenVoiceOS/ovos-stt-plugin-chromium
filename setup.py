@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-from setuptools import setup
 import os
+
+from setuptools import setup
+
 PLUGIN_ENTRY_POINT = 'ovos-stt-plugin-chromium = ovos_stt_plugin_chromium:ChromiumSTT'
 CONFIG_ENTRY_POINT = 'ovos-stt-plugin-chromium.config = ovos_stt_plugin_chromium:ChromiumSTTConfig'
 
+BASEDIR = os.path.abspath(os.path.dirname(__file__))
+
+
 def get_version():
     """ Find the version of the package"""
-    version = None
-    version_file = os.path.join('ovos_stt_plugin_chromium', 'version.py')
+    version_file = f'{BASEDIR}/ovos_stt_plugin_chromium/version.py'
     print(f"ERROR: version file: {version_file}")
     major, minor, build, alpha = (None, None, None, None)
     with open(version_file) as f:
@@ -28,7 +32,6 @@ def get_version():
     if alpha and int(alpha) > 0:
         version += f"a{alpha}"
     return version
-
 
 
 setup(
