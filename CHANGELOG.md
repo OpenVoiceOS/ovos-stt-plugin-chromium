@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.1.1a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a1) (2025-06-08)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.0...0.1.1a1)
+
+**Merged pull requests:**
+
+- fix: compatibility with ovos-plugin-manager 1.X.X [\#11](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/11) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.0](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.0) (2024-09-10)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.0a1...0.1.0)
+
+**Merged pull requests:**
+
+- Release 0.1.0a1 [\#9](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/9) ([github-actions[bot]](https://github.com/apps/github-actions))
+
 ## [0.1.0a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.0a1) (2024-09-10)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1...0.1.0a1)
