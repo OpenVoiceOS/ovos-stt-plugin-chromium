@@ -4,6 +4,7 @@ from typing import List, Tuple, Optional
 
 import requests
 from ovos_plugin_manager.templates.stt import STT
+from ovos_utils import classproperty
 from ovos_utils.log import LOG
 
 # taken from https://stackoverflow.com/questions/14257598/what-are-language-codes-in-chromes-implementation-of-the-html5-speech-recogniti/14302134#14302134
@@ -268,3 +269,13 @@ class ChromiumSTT(STT):
         if not transcripts:
             return ""
         return transcripts[0][0]
+
+    @classproperty
+    def available_languages(cls) -> set:
+        """Return languages supported by this TTS implementation in this state
+        This property should be overridden by the derived class to advertise
+        what languages that engine supports.
+        Returns:
+            set: supported languages
+        """
+        return set(ChromiumSTTConfig.keys())
