@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.1a2](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a2) (2025-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a1...0.1.1a2)
+
+**Closed issues:**
+
+- STT timeout [\#10](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/issues/10)
+- Missing alpha release workflow [\#4](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/issues/4)
+
+**Merged pull requests:**
+
+- chore: Configure Renovate [\#13](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/13) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.1.1a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a1) (2025-06-08)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.0...0.1.1a1)
