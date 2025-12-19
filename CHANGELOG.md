@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1a4](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a4) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a3...0.1.1a4)
+
+**Merged pull requests:**
+
+- chore\(deps\): update actions/setup-python action to v6 [\#18](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/18) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.1.1a3](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a3) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a2...0.1.1a3)
@@ -44,28 +52,6 @@
 **Merged pull requests:**
 
 - feat:release [\#8](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/8) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.1.1](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1) (2024-09-10)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/V0.1.1...0.1.1)
-
-## [V0.1.1](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/V0.1.1) (2024-09-10)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/727ae5cd705ca09b3bba8516d555962edfb5a5ce...V0.1.1)
-
-**Implemented enhancements:**
-
-- feat/alt\_transcripts [\#7](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/7) ([JarbasAl](https://github.com/JarbasAl))
-- update plugin config [\#3](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/3) ([JarbasAl](https://github.com/JarbasAl))
-- feat/plugin\_configs [\#2](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/2) ([NeonJarbas](https://github.com/NeonJarbas))
-
-**Closed issues:**
-
-- Error when voice sample has nothing in it. [\#5](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/issues/5)
-
-**Merged pull requests:**
-
-- ovos\_utils [\#1](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/1) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
