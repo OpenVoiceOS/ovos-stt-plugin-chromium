@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1a5](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a5) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a4...0.1.1a5)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency ovos-plugin-manager to v2 [\#19](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/19) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.1.1a4](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a4) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a3...0.1.1a4)
