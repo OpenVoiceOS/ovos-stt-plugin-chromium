@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1a6](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a6) (2026-01-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a5...0.1.1a6)
+
+**Merged pull requests:**
+
+- refactor: modernize/drop speech\_recognition [\#20](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/20) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.1a5](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a5) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a4...0.1.1a5)
