@@ -6,6 +6,8 @@ import requests
 from ovos_plugin_manager.templates.stt import STT
 from ovos_utils import classproperty
 from ovos_utils.log import LOG
+from ovos_plugin_manager.utils.audio import AudioData, AudioFile
+
 
 # taken from https://stackoverflow.com/questions/14257598/what-are-language-codes-in-chromes-implementation-of-the-html5-speech-recogniti/14302134#14302134
 _lang = {
@@ -222,7 +224,7 @@ class ChromiumSTT(STT):
             log = logging.getLogger("urllib3.connectionpool")
             log.setLevel("INFO")
 
-    def transcribe(self, audio, lang: Optional[str] = None) -> List[Tuple[str, float]]:
+    def transcribe(self, audio: AudioData, lang: Optional[str] = None) -> List[Tuple[str, float]]:
         """transcribe audio data to a list of
         possible transcriptions and respective confidences"""
         flac_data = audio.get_flac_data(
