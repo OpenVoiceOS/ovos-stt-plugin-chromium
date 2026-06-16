@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.1a7](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a7) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a6...0.1.1a7)
+
+**Merged pull requests:**
+
+- chore: add missing shared CI workflows [\#21](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/21) ([JarbasAl](https://github.com/JarbasAl))
+- chore\(deps\): update actions/checkout action to v6 [\#16](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/16) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.1.1a6](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a6) (2026-01-09)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a5...0.1.1a6)
