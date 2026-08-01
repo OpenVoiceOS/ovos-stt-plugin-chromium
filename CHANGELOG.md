@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1a8](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a8) (2026-08-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a7...0.1.1a8)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#24](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/24) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.1a7](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a7) (2026-06-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a6...0.1.1a7)
