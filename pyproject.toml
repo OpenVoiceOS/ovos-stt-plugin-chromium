@@ -23,7 +23,7 @@ dependencies = [
 
 [project.optional-dependencies]
 test = [
-    "pytest>=7.0.0,<9",
+    "pytest>=9.1.1,<10",
 ]
 
 [project.urls]
