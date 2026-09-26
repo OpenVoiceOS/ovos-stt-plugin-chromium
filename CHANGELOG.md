@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1a9](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a9) (2026-09-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a8...0.1.1a9)
+
+**Merged pull requests:**
+
+- Update dependency pytest to v9 [\#22](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/pull/22) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.1.1a8](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/tree/0.1.1a8) (2026-08-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-chromium/compare/0.1.1a7...0.1.1a8)
